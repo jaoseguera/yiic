@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cuprum'), local('Cuprum-Regular'), url(sp1_LTSOMWWV0K5VTuZzvQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Imprima';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Imprima'), local('Imprima-Regular'), url(Lw4J4XiH21tNmX0DzARuSA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Handlee Regular'), local('Handlee-Regular'), url(6AfIXNH5pZ1Jj_pfExPOWQ.woff) format('woff');
+}

@@ -1,0 +1,123 @@
+.colorTip{
+	/* This class is assigned to the color tip span by jQuery */
+	
+	display:none;
+	position:absolute;	
+	left:60%;
+	top:-30px;
+	padding:10px;
+	
+	background-color:white;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	font-style:normal;
+	line-height:1;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:0 0 1px white;
+	white-space:nowrap;
+	
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+
+.pointyTip,.pointyTipShadow{
+	/* Setting a thick transparent border on a 0x0 div to create a triangle */
+	border:6px solid transparent;
+	bottom:-12px;
+	height:0;
+	right:80%;
+	margin-left:-6px;
+	position:absolute;
+	width:0;
+}
+
+.pointyTipShadow{
+	/* The shadow tip is 1px larger, so it acts as a border to the tip */
+	border-width:7px;
+	bottom:-14px;
+	margin-left:-7px;
+}
+
+.colorTipContainer{
+	position:relative;
+	text-decoration:none !important;
+}
+
+
+/* 6 Available Color Themes */
+
+.white .pointyTip{ border-top-color:#eaeaea;}
+.white .pointyTipShadow{ border-top-color:#b0b0b0;}
+.white .colorTip{
+	top:-40px;
+	background-color:#eaeaea;
+	border:1px solid #b0b0b0;
+	color:#555555;
+	padding:10px 45px 10px 30px;
+	
+}
+
+.yellow .pointyTip{ border-top-color:#c8c8c8;}
+.yellow .pointyTipShadow{ border-top-color:#c8c8c8;}
+.yellow .colorTip{
+	top:-40px;
+	background-color:#ededed;
+	border:1px solid #c8c8c8;
+	color:#000;
+	z-index:101;
+	
+}
+
+.blue .pointyTip{ border-top-color:#cecece;}
+.blue .pointyTipShadow{ border-top-color:#eaeaea;}
+.blue .colorTip{
+	top:-50px;
+	background-color:#eaeaea;
+	border:1px solid #cecece;
+	color:#666;
+	z-index:100;
+	
+}
+
+.green .pointyTip{ border-top-color:#f2fdf1;}
+.green .pointyTipShadow{ border-top-color:#b6e184;}
+.green .colorTip{
+	float:left;
+	top:200px;
+	background-color:#f2fdf1;
+	border:1px solid #b6e184;
+	color:#558221;
+}
+
+.red .pointyTip{ border-top-color:#fff;}
+.red .pointyTipShadow{ border-top-color:#969696;}
+.red .colorTip{
+	background-color:#fff;
+	border:1px solid #969696;
+	color:#969696;
+	text-shadow:none;
+	z-index:1001;
+}
+
+.black .pointyTip{ border-top-color:#333;}
+.black .pointyTipShadow{ border-top-color:#111;}
+.black .colorTip{
+	background-color:#333;
+	border:1px solid #111;
+	color:#fcfcfc;
+	text-shadow:none;
+}
+.light
+{
+	margin-top:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	border-bottom:1px solid #fff;
+	border-top:1px solid #fff;
+}
+.light:hover
+{
+	border-bottom:1px solid #a7a7a7;
+	border-top:1px solid #a7a7a7;
+}

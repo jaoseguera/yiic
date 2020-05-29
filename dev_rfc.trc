@@ -1,0 +1,97 @@
+
+**** Trace file opened at 2018-07-24, 16:25:58 GMT
+RFC Library Release: 721 Patch Level 48, Compiled on Apr 14 2018 04:51:23
+ CPIC library: 721.2018.02.03 version 3, NI library: 40, Kernel Release: 721 Patch Level 0
+ Current working directory: /home/emmx/Documents/thinui/thinuinew, Program: php
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 4.4.0-31-generic
+ Hostname: emmx-VirtualBox, IP address: 127.0.1.1, IPv6 address: 127.0.1.1
+
+ERROR The UUID daemon (uuidd) is not active.
+
+Please ask your system administrator to activate 
+uuidd according to SAP note 1391070.
+
+
+**** Trace file opened at 2019-09-17, 12:14:17 GMT
+RFC Library Release: 721 Patch Level 48, Compiled on Apr 14 2018 04:51:23
+ CPIC library: 721.2018.02.03 version 3, NI library: 40, Kernel Release: 721 Patch Level 0
+ Current working directory: /home/emmx/Documents/thinui, Program: apache2
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 5.0.0-27-generic
+ Hostname: emmx-VirtualBox, IP address: 127.0.1.1, IPv6 address: 127.0.1.1
+
+ABAP Message during connect: Password logon no longer possible - too many failed attempts
+
+
+**** Trace file opened at 2019-09-17, 12:14:41 GMT
+RFC Library Release: 721 Patch Level 48, Compiled on Apr 14 2018 04:51:23
+ CPIC library: 721.2018.02.03 version 3, NI library: 40, Kernel Release: 721 Patch Level 0
+ Current working directory: /home/emmx/Documents/thinui, Program: apache2
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 5.0.0-27-generic
+ Hostname: emmx-VirtualBox, IP address: 127.0.1.1, IPv6 address: 127.0.1.1
+
+ABAP Message during connect: Password logon no longer possible - too many failed attempts
+
+
+**** Trace file opened at 2019-09-17, 12:16:12 GMT
+RFC Library Release: 721 Patch Level 48, Compiled on Apr 14 2018 04:51:23
+ CPIC library: 721.2018.02.03 version 3, NI library: 40, Kernel Release: 721 Patch Level 0
+ Current working directory: /home/emmx/Documents/thinui, Program: apache2
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 5.0.0-27-generic
+ Hostname: emmx-VirtualBox, IP address: 127.0.1.1, IPv6 address: 127.0.1.1
+
+ABAP Message during connect: Password logon no longer possible - too many failed attempts
+
+
+**** Trace file opened at 2019-09-17, 12:18:33 GMT
+RFC Library Release: 721 Patch Level 48, Compiled on Apr 14 2018 04:51:23
+ CPIC library: 721.2018.02.03 version 3, NI library: 40, Kernel Release: 721 Patch Level 0
+ Current working directory: /home/emmx/Documents/thinui, Program: apache2
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 5.0.0-27-generic
+ Hostname: emmx-VirtualBox, IP address: 127.0.1.1, IPv6 address: 127.0.1.1
+
+ABAP Message during connect: Password logon no longer possible - too many failed attempts
+
+
+**** Trace file opened at 2019-09-17, 12:19:37 GMT
+RFC Library Release: 721 Patch Level 48, Compiled on Apr 14 2018 04:51:23
+ CPIC library: 721.2018.02.03 version 3, NI library: 40, Kernel Release: 721 Patch Level 0
+ Current working directory: /home/emmx/Documents/thinui, Program: apache2
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 5.0.0-27-generic
+ Hostname: emmx-VirtualBox, IP address: 127.0.1.1, IPv6 address: 127.0.1.1
+
+ABAP Message during connect: Password logon no longer possible - too many failed attempts
+
+ABAP Message during connect: Password logon no longer possible - too many failed attempts
+
+ABAP Message during connect: Password logon no longer possible - too many failed attempts
+
+
+**** Trace file opened at 2019-09-17, 12:26:17 GMT
+RFC Library Release: 721 Patch Level 48, Compiled on Apr 14 2018 04:51:23
+ CPIC library: 721.2018.02.03 version 3, NI library: 40, Kernel Release: 721 Patch Level 0
+ Current working directory: /home/emmx/Documents/thinui, Program: apache2
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 5.0.0-27-generic
+ Hostname: emmx-VirtualBox, IP address: 127.0.1.1, IPv6 address: 127.0.1.1
+
+ABAP Message during connect: Password logon no longer possible - too many failed attempts
+
+
+**** Trace file opened at 2019-09-17, 12:28:28 GMT
+RFC Library Release: 721 Patch Level 48, Compiled on Apr 14 2018 04:51:23
+ CPIC library: 721.2018.02.03 version 3, NI library: 40, Kernel Release: 721 Patch Level 0
+ Current working directory: /home/emmx/Documents/thinui, Program: apache2
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 5.0.0-27-generic
+ Hostname: emmx-VirtualBox, IP address: 127.0.1.1, IPv6 address: 127.0.1.1
+
+ABAP Message during connect: Password logon no longer possible - too many failed attempts
+
+
+**** Trace file opened at 2019-09-17, 12:29:13 GMT
+RFC Library Release: 721 Patch Level 48, Compiled on Apr 14 2018 04:51:23
+ CPIC library: 721.2018.02.03 version 3, NI library: 40, Kernel Release: 721 Patch Level 0
+ Current working directory: /home/emmx/Documents/thinui, Program: apache2
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 5.0.0-27-generic
+ Hostname: emmx-VirtualBox, IP address: 127.0.1.1, IPv6 address: 127.0.1.1
+
+ABAP Message during connect: Name or password is incorrect (repeat logon)
+

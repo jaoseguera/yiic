@@ -1,0 +1,13 @@
+
+**** Trace file opened at 2018-07-24, 16:33:40 GMT
+RFC Library Release: 721 Patch Level 48, Compiled on Apr 14 2018 04:51:23
+ CPIC library: 721.2018.02.03 version 3, NI library: 40, Kernel Release: 721 Patch Level 0
+ Current working directory: /home/emmx/Documents/thinui/thinuinew/protected/components/couchNew2, Program: php
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 4.4.0-31-generic
+ Hostname: emmx-VirtualBox, IP address: 127.0.1.1, IPv6 address: 127.0.1.1
+
+ERROR The UUID daemon (uuidd) is not active.
+
+Please ask your system administrator to activate 
+uuidd according to SAP note 1391070.
+

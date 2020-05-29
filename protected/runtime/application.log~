@@ -1,0 +1,942 @@
+2018/06/25 12:41:41 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "image/thin-ui.ico". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('image/thin-ui.i...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/image/thin-ui.ico
+HTTP_REFERER=http://thinui.com/
+---
+2018/06/25 12:41:56 [error] [exception.TypeError] TypeError: Argument 1 passed to SAPNWRFC\Connection::__construct() must be of the type array, null given in /home/emmx/Documents/thinui/thinuinew/protected/controllers/CommonController.php:355
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/controllers/CommonController.php(355): SAPNWRFC\Connection->__construct(NULL)
+#1 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): CommonController->actionSystemMSG()
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('systemmsg')
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('common/systemms...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#9 {main}
+REQUEST_URI=/common/systemmsg
+HTTP_REFERER=http://thinui.com/host
+---
+2018/06/25 12:42:38 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "Back_Orders/tabledata". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('Back_Orders/tab...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/Back_Orders/tabledata
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 12:44:56 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/material_availability.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/mat...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/material_availability.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 12:45:04 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/material_availability.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/mat...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/material_availability.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 12:45:25 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set TABLE row, expected array for parameter I_PLANT_RANGE in /home/emmx/Documents/thinui/thinuinew/protected/models/Material_availabilityForm.php:46
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Material_availabilityForm.php(46): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Material_availabilityController.php(38): Material_availabilityForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Material_availabilityController->actionTabledata()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('tabledata')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('material_availa...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/material_availability/tabledata
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 12:47:48 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/material_availability.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/mat...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/material_availability.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 12:48:02 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: All parameter keys must be strings. in /home/emmx/Documents/thinui/thinuinew/protected/models/Material_availabilityForm.php:48
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Material_availabilityForm.php(48): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Material_availabilityController.php(38): Material_availabilityForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Material_availabilityController->actionTabledata()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('tabledata')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('material_availa...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/material_availability/tabledata
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 12:49:22 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/material_availability.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/mat...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/material_availability.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 12:49:38 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set TABLE row, expected array for parameter I_PLANT_RANGE in /home/emmx/Documents/thinui/thinuinew/protected/models/Material_availabilityForm.php:46
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Material_availabilityForm.php(46): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Material_availabilityController.php(38): Material_availabilityForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Material_availabilityController->actionTabledata()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('tabledata')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('material_availa...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/material_availability/tabledata
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 12:56:29 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/material_availability.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/mat...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/material_availability.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 12:57:49 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set FLOAT parameter TARGET_QTY, expected int or double in /home/emmx/Documents/thinui/thinuinew/protected/views/editsalesorder/save_sales_order.php:186
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/views/editsalesorder/save_sales_order.php(186): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/framework/web/CBaseController.php(126): require('/home/emmx/Docu...')
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/emmx/Docu...', Array, true)
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(869): CBaseController->renderFile('/home/emmx/Docu...', Array, true)
+#4 /home/emmx/Documents/thinui/thinuinew/protected/controllers/EditsalesorderController.php(108): CController->renderPartial('save_sales_orde...', Array)
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): EditsalesorderController->actionSave_sales_order()
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('save_sales_orde...')
+#10 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('editsalesorder/...')
+#11 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/editsalesorder/save_sales_order
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:01:18 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set FLOAT parameter COND_VALUE, expected int or double in /home/emmx/Documents/thinui/thinuinew/protected/views/editsalesorder/save_sales_order.php:186
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/views/editsalesorder/save_sales_order.php(186): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/framework/web/CBaseController.php(126): require('/home/emmx/Docu...')
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/emmx/Docu...', Array, true)
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(869): CBaseController->renderFile('/home/emmx/Docu...', Array, true)
+#4 /home/emmx/Documents/thinui/thinuinew/protected/controllers/EditsalesorderController.php(108): CController->renderPartial('save_sales_orde...', Array)
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): EditsalesorderController->actionSave_sales_order()
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('save_sales_orde...')
+#10 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('editsalesorder/...')
+#11 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/editsalesorder/save_sales_order
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:02:56 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to get description for parameter SCHEDULES_LINES in /home/emmx/Documents/thinui/thinuinew/protected/views/editsalesorder/save_sales_order.php:186
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/views/editsalesorder/save_sales_order.php(186): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/framework/web/CBaseController.php(126): require('/home/emmx/Docu...')
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/emmx/Docu...', Array, true)
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(869): CBaseController->renderFile('/home/emmx/Docu...', Array, true)
+#4 /home/emmx/Documents/thinui/thinuinew/protected/controllers/EditsalesorderController.php(108): CController->renderPartial('save_sales_orde...', Array)
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): EditsalesorderController->actionSave_sales_order()
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('save_sales_orde...')
+#10 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('editsalesorder/...')
+#11 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/editsalesorder/save_sales_order
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:04:16 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/customer_open_items.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/cus...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/customer_open_items.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:04:24 [error] [exception.Error] Error: Call to undefined function split() in /home/emmx/Documents/thinui/thinuinew/protected/models/Customer_open_itemForm.php:40
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Customer_open_itemsController.php(38): Customer_open_itemForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#1 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Customer_open_itemsController->actionTabledata()
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('tabledata')
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('Customer_open_i...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#9 {main}
+REQUEST_URI=/Customer_open_items/tabledata
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:06:46 [error] [exception.ParseError] ParseError: syntax error, unexpected ',' in /home/emmx/Documents/thinui/thinuinew/protected/models/Customer_open_itemForm.php:45
+Stack trace:
+#0 [internal function]: YiiBase::autoload('Customer_open_i...')
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Customer_open_itemsController.php(74): spl_autoload_call('Customer_open_i...')
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Customer_open_itemsController->actionCustomer_open_items()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('customer_open_i...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('customer_open_i...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/customer_open_items/customer_open_items
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:06:46 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/customer_open_items.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/cus...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/customer_open_items.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:07:15 [error] [exception.ParseError] ParseError: syntax error, unexpected ',' in /home/emmx/Documents/thinui/thinuinew/protected/models/Customer_open_itemForm.php:45
+Stack trace:
+#0 [internal function]: YiiBase::autoload('Customer_open_i...')
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Customer_open_itemsController.php(74): spl_autoload_call('Customer_open_i...')
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Customer_open_itemsController->actionCustomer_open_items()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('customer_open_i...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('customer_open_i...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/customer_open_items/customer_open_items
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:07:15 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/customer_open_items.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/cus...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/customer_open_items.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:07:58 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/customer_open_items.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/cus...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/customer_open_items.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:08:02 [error] [exception.Error] Error: Call to undefined function split() in /home/emmx/Documents/thinui/thinuinew/protected/models/Customer_open_itemForm.php:40
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Customer_open_itemsController.php(38): Customer_open_itemForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#1 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Customer_open_itemsController->actionTabledata()
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('tabledata')
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('Customer_open_i...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#9 {main}
+REQUEST_URI=/Customer_open_items/tabledata
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:08:49 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/customer_open_items.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/cus...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/customer_open_items.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:08:54 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set DATE parameter KEYDATE, invalid format given in /home/emmx/Documents/thinui/thinuinew/protected/models/Customer_open_itemForm.php:54
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Customer_open_itemForm.php(54): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Customer_open_itemsController.php(38): Customer_open_itemForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Customer_open_itemsController->actionTabledata()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('tabledata')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('Customer_open_i...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/Customer_open_items/tabledata
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:09:30 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/customer_open_items.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/cus...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/customer_open_items.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:09:35 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set DATE parameter KEYDATE, invalid format given in /home/emmx/Documents/thinui/thinuinew/protected/models/Customer_open_itemForm.php:54
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Customer_open_itemForm.php(54): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Customer_open_itemsController.php(38): Customer_open_itemForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Customer_open_itemsController->actionTabledata()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('tabledata')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('Customer_open_i...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/Customer_open_items/tabledata
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:10:26 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/customer_open_items.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/cus...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/customer_open_items.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:12:37 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set DATE parameter KEYDATE, invalid format given in /home/emmx/Documents/thinui/thinuinew/protected/models/Customer_open_itemForm.php:55
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Customer_open_itemForm.php(55): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Customer_open_itemsController.php(38): Customer_open_itemForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Customer_open_itemsController->actionTabledata()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('tabledata')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('Customer_open_i...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/Customer_open_items/tabledata
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:13:06 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/customer_open_items.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/cus...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/customer_open_items.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:19:29 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/customer_open_items_head.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/cus...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/customer_open_items_head.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:19:35 [error] [exception.Error] Error: Call to undefined function split() in /home/emmx/Documents/thinui/thinuinew/protected/views/customer_open_items_head/head.php:12
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CBaseController.php(126): require()
+#1 /home/emmx/Documents/thinui/thinuinew/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/emmx/Docu...', Array, true)
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(869): CBaseController->renderFile('/home/emmx/Docu...', Array, true)
+#3 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Customer_open_items_headController.php(102): CController->renderPartial('head', Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Customer_open_items_headController->actionHeader()
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('header')
+#9 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('customer_open_i...')
+#10 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/customer_open_items_head/header
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:20:26 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/customer_open_items_head.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/cus...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/customer_open_items_head.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:20:30 [error] [exception.Error] Error: Call to undefined function split() in /home/emmx/Documents/thinui/thinuinew/protected/views/customer_open_items_head/head.php:12
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CBaseController.php(126): require()
+#1 /home/emmx/Documents/thinui/thinuinew/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/emmx/Docu...', Array, true)
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(869): CBaseController->renderFile('/home/emmx/Docu...', Array, true)
+#3 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Customer_open_items_headController.php(102): CController->renderPartial('head', Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Customer_open_items_headController->actionHeader()
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('header')
+#9 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('customer_open_i...')
+#10 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#12 {main}
+REQUEST_URI=/customer_open_items_head/header
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:21:38 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/customer_open_items_head.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/cus...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/customer_open_items_head.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:21:42 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set DATE parameter KEYDATE, invalid format given in /home/emmx/Documents/thinui/thinuinew/protected/views/customer_open_items_head/head.php:24
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/views/customer_open_items_head/head.php(24): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/framework/web/CBaseController.php(126): require('/home/emmx/Docu...')
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/emmx/Docu...', Array, true)
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(869): CBaseController->renderFile('/home/emmx/Docu...', Array, true)
+#4 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Customer_open_items_headController.php(102): CController->renderPartial('head', Array)
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Customer_open_items_headController->actionHeader()
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('header')
+#10 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('customer_open_i...')
+#11 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/customer_open_items_head/header
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:23:16 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/customer_open_items_head.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/cus...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/customer_open_items_head.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:24:18 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set FLOAT parameter AMT_DOCCUR, expected int or double in /home/emmx/Documents/thinui/thinuinew/protected/models/Post_incoming_paymentForm.php:77
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Post_incoming_paymentForm.php(77): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Post_incoming_paymentController.php(45): Post_incoming_paymentForm->_actionSubmit(Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Post_incoming_paymentController->actionPost_incoming_payment()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('post_incoming_p...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('post_incoming_p...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/post_incoming_payment/post_incoming_payment
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 13:25:51 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set FLOAT parameter AMT_DOCCUR, expected int or double in /home/emmx/Documents/thinui/thinuinew/protected/models/Post_incoming_paymentForm.php:77
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Post_incoming_paymentForm.php(77): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Post_incoming_paymentController.php(45): Post_incoming_paymentForm->_actionSubmit(Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Post_incoming_paymentController->actionPost_incoming_payment()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('post_incoming_p...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('post_incoming_p...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/post_incoming_payment/post_incoming_payment
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:01:01 [error] [exception.Error] Error: Call to undefined method SAPNWRFC\Connection::getFuntion() in /home/emmx/Documents/thinui/thinuinew/protected/controllers/EditvendorsController.php:112
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): EditvendorsController->actionChange_vendors()
+#1 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('change_vendors')
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('editvendors/cha...')
+#6 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#8 {main}
+REQUEST_URI=/editvendors/change_vendors
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:02:17 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/editvendors.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/edi...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/editvendors.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:02:44 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/editvendors.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/edi...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/editvendors.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:06:59 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/supply_list.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/sup...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/supply_list.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:09:08 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set DATE parameter DOC_DATE, invalid format given in /home/emmx/Documents/thinui/thinuinew/protected/models/Search_purchase_ordersForm.php:67
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Search_purchase_ordersForm.php(67): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Search_purchase_ordersController.php(41): Search_purchase_ordersForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Search_purchase_ordersController->actionTabledata()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('tabledata')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('search_purchase...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/search_purchase_orders/tabledata
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:12:01 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set CHAR parameter ITEMS_OPEN_FOR_RECEIPT, expected string in /home/emmx/Documents/thinui/thinuinew/protected/models/Search_purchase_ordersForm.php:67
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Search_purchase_ordersForm.php(67): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Search_purchase_ordersController.php(41): Search_purchase_ordersForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Search_purchase_ordersController->actionTabledata()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('tabledata')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('search_purchase...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/search_purchase_orders/tabledata
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:14:34 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set FLOAT parameter QUANTITY, expected int or double in /home/emmx/Documents/thinui/thinuinew/protected/models/Create_purchase_orderForm.php:90
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Create_purchase_orderForm.php(90): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Create_purchase_orderController.php(44): Create_purchase_orderForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Create_purchase_orderController->actionCreate_purchase_order()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('create_purchase...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('create_purchase...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/create_purchase_order/create_purchase_order
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:15:37 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set FLOAT parameter QUANTITY, expected int or double in /home/emmx/Documents/thinui/thinuinew/protected/models/Create_purchase_orderForm.php:90
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Create_purchase_orderForm.php(90): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Create_purchase_orderController.php(44): Create_purchase_orderForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Create_purchase_orderController->actionCreate_purchase_order()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('create_purchase...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('create_purchase...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/create_purchase_order/create_purchase_order
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:19:56 [error] [exception.Error] Error: Call to undefined method SAPNWRFC\Connection::getFuntion() in /home/emmx/Documents/thinui/thinuinew/protected/models/Create_purchase_orderForm.php:118
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Create_purchase_orderController.php(44): Create_purchase_orderForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#1 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Create_purchase_orderController->actionCreate_purchase_order()
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('create_purchase...')
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('create_purchase...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#9 {main}
+REQUEST_URI=/create_purchase_order/create_purchase_order
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:23:51 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/edit_purchase_order.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/edi...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/edit_purchase_order.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:24:27 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/post_good_receipt.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/pos...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/post_good_receipt.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:26:03 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set FLOAT parameter ENTRY_QNT, expected int or double in /home/emmx/Documents/thinui/thinuinew/protected/models/Post_good_receiptForm.php:68
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Post_good_receiptForm.php(68): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Post_good_receiptController.php(45): Post_good_receiptForm->_actionSubmit(Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Post_good_receiptController->actionPost_good_receipt()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('post_good_recei...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('post_good_recei...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/post_good_receipt/post_good_receipt
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:29:59 [error] [exception.Error] Error: Call to a member function getFunction() on null in /home/emmx/Documents/thinui/thinuinew/protected/models/Create_prod_orderForm.php:58
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Create_prod_orderController.php(44): Create_prod_orderForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#1 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Create_prod_orderController->actionCreate_prod_order()
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('create_prod_ord...')
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('create_prod_ord...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#9 {main}
+REQUEST_URI=/create_prod_order/create_prod_order
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:32:02 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set INT1 parameter WORK_PROCESS_MAX, expected integer in /home/emmx/Documents/thinui/thinuinew/protected/models/Release_prod_orderForm.php:39
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Release_prod_orderForm.php(39): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Release_prod_orderController.php(43): Release_prod_orderForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Release_prod_orderController->actionRelease_prod_order()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('release_prod_or...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('release_prod_or...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/release_prod_order/release_prod_order
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:32:17 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set INT1 parameter WORK_PROCESS_MAX, expected integer in /home/emmx/Documents/thinui/thinuinew/protected/models/Release_prod_orderForm.php:39
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Release_prod_orderForm.php(39): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Release_prod_orderController.php(43): Release_prod_orderForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Release_prod_orderController->actionRelease_prod_order()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('release_prod_or...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('release_prod_or...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/release_prod_order/release_prod_order
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:34:29 [error] [exception.ParseError] ParseError: syntax error, unexpected 'if' (T_IF), expecting variable (T_VARIABLE) or '$' in /home/emmx/Documents/thinui/thinuinew/protected/models/Confirm_prod_orderForm.php:23
+Stack trace:
+#0 [internal function]: YiiBase::autoload('Confirm_prod_or...')
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Confirm_prod_orderController.php(32): spl_autoload_call('Confirm_prod_or...')
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Confirm_prod_orderController->actionConfirm_prod_order()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('confirm_prod_or...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('confirm_prod_or...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/confirm_prod_order/confirm_prod_order
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:34:37 [error] [exception.ParseError] ParseError: syntax error, unexpected 'if' (T_IF), expecting variable (T_VARIABLE) or '$' in /home/emmx/Documents/thinui/thinuinew/protected/models/Confirm_prod_orderForm.php:23
+Stack trace:
+#0 [internal function]: YiiBase::autoload('Confirm_prod_or...')
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Confirm_prod_orderController.php(32): spl_autoload_call('Confirm_prod_or...')
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Confirm_prod_orderController->actionConfirm_prod_order()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('confirm_prod_or...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('confirm_prod_or...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/confirm_prod_order/confirm_prod_order
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:40:38 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set CHAR parameter FIN_CONF, expected string in /home/emmx/Documents/thinui/thinuinew/protected/models/Confirm_prod_orderForm.php:40
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Confirm_prod_orderForm.php(40): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Confirm_prod_orderController.php(44): Confirm_prod_orderForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Confirm_prod_orderController->actionConfirm_prod_order()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('confirm_prod_or...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('confirm_prod_or...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/confirm_prod_order/confirm_prod_order
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:50:28 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set CHAR parameter FIN_CONF, expected string in /home/emmx/Documents/thinui/thinuinew/protected/models/Confirm_prod_orderForm.php:40
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Confirm_prod_orderForm.php(40): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Confirm_prod_orderController.php(44): Confirm_prod_orderForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Confirm_prod_orderController->actionConfirm_prod_order()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('confirm_prod_or...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('confirm_prod_or...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/confirm_prod_order/confirm_prod_order
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:52:44 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set CHAR parameter FIN_CONF, expected string in /home/emmx/Documents/thinui/thinuinew/protected/models/Confirm_prod_orderForm.php:40
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Confirm_prod_orderForm.php(40): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Confirm_prod_orderController.php(44): Confirm_prod_orderForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Confirm_prod_orderController->actionConfirm_prod_order()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('confirm_prod_or...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('confirm_prod_or...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/confirm_prod_order/confirm_prod_order
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:53:37 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set CHAR parameter FIN_CONF, expected string in /home/emmx/Documents/thinui/thinuinew/protected/models/Confirm_prod_orderForm.php:40
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Confirm_prod_orderForm.php(40): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Confirm_prod_orderController.php(44): Confirm_prod_orderForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Confirm_prod_orderController->actionConfirm_prod_order()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('confirm_prod_or...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('confirm_prod_or...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/confirm_prod_order/confirm_prod_order
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:56:27 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set FLOAT parameter YIELD, expected int or double in /home/emmx/Documents/thinui/thinuinew/protected/models/Confirm_prod_orderForm.php:41
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Confirm_prod_orderForm.php(41): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Confirm_prod_orderController.php(44): Confirm_prod_orderForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Confirm_prod_orderController->actionConfirm_prod_order()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('confirm_prod_or...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('confirm_prod_or...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/confirm_prod_order/confirm_prod_order
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:59:37 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/material_availability.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/mat...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/material_availability.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 14:59:54 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set TABLE row, expected array for parameter I_PLANT_RANGE in /home/emmx/Documents/thinui/thinuinew/protected/models/Material_availabilityForm.php:46
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Material_availabilityForm.php(46): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Material_availabilityController.php(38): Material_availabilityForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Material_availabilityController->actionTabledata()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('tabledata')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('material_availa...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/material_availability/tabledata
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 15:00:22 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/material_availability.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/mat...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/material_availability.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 15:00:25 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/material_transfer.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/mat...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/material_transfer.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 15:00:36 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set FLOAT parameter ENTRY_QNT, expected int or double in /home/emmx/Documents/thinui/thinuinew/protected/models/Material_transferForm.php:70
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/models/Material_transferForm.php(70): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Material_transferController.php(41): Material_transferForm->_actionSubmit(Object(stdClass), 'desktop', Object(SAPNWRFC\RemoteFunction))
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Material_transferController->actionMaterial_transfer()
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('material_transf...')
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('material_transf...')
+#8 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/material_transfer/material_transfer
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 15:01:51 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/material_transfer.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/mat...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/material_transfer.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 15:02:39 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/place_in_storage.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/pla...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/place_in_storage.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 15:04:12 [error] [exception.SAPNWRFC\FunctionCallException] SAPNWRFC\FunctionCallException: Failed to set FLOAT parameter ENTRY_QNT, expected int or double in /home/emmx/Documents/thinui/thinuinew/protected/views/place_in_storage/save_place_in_storage.php:34
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/protected/views/place_in_storage/save_place_in_storage.php(34): SAPNWRFC\RemoteFunction->invoke(Array, Array)
+#1 /home/emmx/Documents/thinui/thinuinew/framework/web/CBaseController.php(126): require('/home/emmx/Docu...')
+#2 /home/emmx/Documents/thinui/thinuinew/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/emmx/Docu...', Array, true)
+#3 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(869): CBaseController->renderFile('/home/emmx/Docu...', Array, true)
+#4 /home/emmx/Documents/thinui/thinuinew/protected/controllers/Place_in_storageController.php(67): CController->renderPartial('save_place_in_s...', Array)
+#5 /home/emmx/Documents/thinui/thinuinew/framework/web/actions/CInlineAction.php(49): Place_in_storageController->actionSave_storage()
+#6 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /home/emmx/Documents/thinui/thinuinew/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(282): CController->run('save_storage')
+#10 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('place_in_storag...')
+#11 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/place_in_storage/save_storage
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 15:05:00 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/place_in_storage.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/pla...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/place_in_storage.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 15:05:39 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/zreports1.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/zre...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/zreports1.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 15:05:54 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/zreports2.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/zre...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/zreports2.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 15:06:06 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/time_recording.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/tim...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/time_recording.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---
+2018/06/25 15:07:00 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "images/help/create_customers_master.jpg". in /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/emmx/Documents/thinui/thinuinew/framework/web/CWebApplication.php(141): CWebApplication->runController('images/help/cre...')
+#1 /home/emmx/Documents/thinui/thinuinew/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/emmx/Documents/thinui/thinuinew/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/help/create_customers_master.jpg
+HTTP_REFERER=http://thinui.com/dashboard
+---

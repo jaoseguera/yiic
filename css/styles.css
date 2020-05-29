@@ -1,0 +1,145 @@
+
+.txt {
+    background: transparent url("../images/icons/notepad.png") no-repeat scroll 0 0;
+	  height: 30px;
+    width: 20px;
+	cursor:pointer;
+	margin-left:30%;
+    }
+
+.prodAvQuotationButton{
+    background: transparent url(../images/icons/zoom.png) no-repeat scroll 0 0;
+    height: 30px;
+    width: 20px;
+    cursor: pointer;
+    margin-left: 30%;
+}
+
+
+.grf
+{
+	border:1px solid #cecece;
+	height:180px;
+}
+
+.gap
+{
+	width:10px;
+}
+
+.bar_tip ul li
+{
+	list-style:none;
+	height:36px;
+	border-top:1px solid #cecece;
+	
+	
+	
+}
+
+
+.tods
+{
+	
+	width:12px;
+	height:12px;
+	background: url('../images/todays.png') no-repeat;
+
+}
+.bak
+{
+	width:12px;
+	height:12px;
+	background: url('../images/back_order.png') no-repeat;
+}
+
+.leng
+{
+	color:#666;
+	font-size:10px;
+	
+	
+}
+.leng td
+{
+	padding:4px;
+}
+.read
+{
+	min-width:110px;
+}
+
+
+.grf td div
+{
+	width:40px;
+	
+}
+
+.bar_tip
+{
+height:180px;
+font-size:12px;
+color:#666;
+}
+
+.bar_tip ul
+{
+	
+	float:right;
+	margin-top:6px;
+	
+	
+}
+.sb
+{
+	width:12px;
+	height:12px;
+	background: url('../images/sales_delivery.png') no-repeat;
+	 	
+}
+.sd
+{
+	width:12px;
+	height:12px;
+	background: url('../images/sales_billing.png') no-repeat;
+	
+}
+.tods
+{
+	
+	
+	width:12px;
+	height:12px;
+	background: url('../images/todays.png') no-repeat;
+
+}
+
+.reo
+{
+	width:12px;
+	height:12px;
+	background: url('../images/return_orders.png') no-repeat;
+	
+}
+
+.commt td
+{
+	padding-top:6px;
+}
+.strip
+{
+	position:absolute;
+	padding-left:150px;
+	margin-top:-10px;
+
+}
+.circle li div
+{
+	color:#005580;
+	cursor:pointer;
+}
+.circle li div:hover
+{
+	text-decoration:underline;
+}

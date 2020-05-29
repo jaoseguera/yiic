@@ -1,0 +1,42 @@
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 3.2.0
+build: 2676
+*/
+
+
+
+
+
+
+#tweets {
+	height:65px;
+}
+
+#tweets li {
+	padding: 5px;
+	color:#FFFFFF;
+	line-height:150%;
+	list-style:none;
+}
+
+#tweets li .timestamp {text-align:right;color:#cecece;}
+
+
+.twitt {
+	height:65px;
+}
+
+.twitt li {
+	padding: 5px;
+	color:#FFFFFF;
+	line-height:150%;
+	list-style:none;
+}
+
+.twitt li .timestamp {text-align:right;color:#cecece;}
+
+
+
