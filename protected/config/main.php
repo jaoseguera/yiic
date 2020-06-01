@@ -19,6 +19,7 @@ return array(
 		'application.models.*',
 		'application.components.*',
 		'application.components.lib.*',
+		'application.components.couchNew.Exceptions.*',
 		'application.components.couchNew.Adapter.*',		
 		'application.components.couchNew.Dotenv.*',		
 		'application.components.couchNew.*',		

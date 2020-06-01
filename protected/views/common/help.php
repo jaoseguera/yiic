@@ -142,6 +142,7 @@ $res = $fce->invoke([
             "SELECTION_FOR_HELPVALUES"=>$importTable
         ],$options);
 $rowsagt1 = count($res["DESCRIPTION_FOR_HELPVALUES"]);
+
 $mtrl_lookup = false;
 $create_sales_order_lookup = false;
 for ($j = 0; $j < $rowsagt1; $j++) {
@@ -180,6 +181,7 @@ $_SESSION['look_p'] = $p;
     if($_REQUEST['type'] == 'TARGET_QU') {
         $sap_table_result = "VALUES";
     }
+
     $rowsagt = count($res[$sap_table_result]);
 
 $rowsagt = count($res[$sap_table_result]);

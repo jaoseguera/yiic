@@ -77,9 +77,9 @@ function tipup(obj,method,order,type,title,ids,sel,scr_id,lo_id,values)
     var val = "";
     if(scr_id!="")
         val = $('#'+scr_id).val()
+
     // $('#title').html(title+"<span class='swip'>Swipe to Scroll</span>"); 
     $('#dialog').html("<img src='<?php echo Yii::app()->request->baseUrl; ?>/images/loader.gif' style='margin-left:45%;margin-top:15%;'>");
-
     var datastr = 'url=lookup&key=lookup&type='+type+'&order='+order+'&ids='+ids+'&obj='+obj+'&method='+method+'&sel='+sel+'&lo_value='+val+'&lo_id='+lo_id;
 
     if(isSalesPerson) {
