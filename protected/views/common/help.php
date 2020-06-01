@@ -161,7 +161,7 @@ for ($j = 0; $j < $rowsagt1; $j++) {
     $offset[] = $SalesOrdert1['OFFSET'];
     $leng[] = $SalesOrdert1['LENG'];
     // $text[] = $SalesOrdert1['SCRTEXT_L'];
-    $text[] = (trim($SalesOrdert1['SCRTEXT_L']) != "") ? trim($SalesOrdert1['SCRTEXT_L']) : trim($SalesOrdert1['REPTEXT']);
+	$text[] = (trim($SalesOrdert1['SCRTEXT_L']) != "") ? trim($SalesOrdert1['SCRTEXT_L']) : trim($SalesOrdert1['REPTEXT']);
     //var_dump($SalesOrdert1);
 }
 

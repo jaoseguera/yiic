@@ -17,8 +17,6 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-namespace PHPOnCouch\Adapter;
-
 use InvalidArgumentException;
 use PHPOnCouch\Exceptions\CouchException;
 use Exception;

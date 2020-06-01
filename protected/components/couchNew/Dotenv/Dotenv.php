@@ -1,7 +1,7 @@
 <?php
 
 
-use Dotenv\Exception\InvalidPathException;
+use InvalidPathException;
 
 /**
  * This is the dotenv class.

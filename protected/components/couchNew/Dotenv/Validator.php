@@ -1,8 +1,8 @@
 <?php
 
 
-use Dotenv\Exception\InvalidCallbackException;
-use Dotenv\Exception\ValidationException;
+use InvalidCallbackException;
+use ValidationException;
 
 /**
  * This is the validator class.

@@ -15,10 +15,9 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-namespace PHPOnCouch;
 
-use PHPOnCouch\Exceptions\CouchException;
-use PHPOnCouch\Exceptions\CouchUnauthorizedException;
+use CouchException;
+use CouchUnauthorizedException;
 use stdClass;
 use InvalidArgumentException;
 use Exception;

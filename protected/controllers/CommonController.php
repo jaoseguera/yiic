@@ -394,7 +394,7 @@ class CommonController extends Controller {
 
     public function actionLookuptype() {
         if (Yii::app()->user->hasState("login")) {
-            $type	= $_REQUEST['type'];
+			$type	= $_REQUEST['type'];
             $client = Controller::couchDbconnection();
 			if(!Yii::app()->user->getState("bv"))
 				$lv='';
@@ -403,7 +403,7 @@ class CommonController extends Controller {
 				$lv=Yii::app()->user->getState("bv");
 				$lv=($lv!='v1'?'-'.$lv:'');
 			}
-            $doc    = $client->getDoc("lookuptype".$lv);
+			$doc    = $client->getDoc("lookuptype".$lv);
 			echo json_encode($doc->$type);
         } else {
             $this->redirect(array('login/'));

@@ -20,16 +20,16 @@
 
 use Exception;
 use InvalidArgumentException;
-use PHPOnCouch\Exceptions\CouchException;
-use PHPOnCouch\Exceptions\ConflictException;
-use PHPOnCouch\Exceptions\CouchNoResponseException;
-use PHPOnCouch\Exceptions\ForbiddenException;
-use PHPOnCouch\Exceptions\NotFoundException;
-use PHPOnCouch\Exceptions\UnauthorizedException;
-use PHPOnCouch\Exceptions\ExpectationException;
+use CouchException;
+use ConflictException;
+use CouchNoResponseException;
+use ForbiddenException;
+use NotFoundException;
+use UnauthorizedException;
+use ExpectationException;
 use CouchHttpAdapterInterface;
 use CouchHttpAdapterCurl;
-use PHPOnCouch\Adapter\CouchHttpAdapterSocket;
+use CouchHttpAdapterSocket;
 
 
 /**

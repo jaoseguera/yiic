@@ -1,6 +1,5 @@
 <?php
 
-namespace Dotenv\Exception;
 
 use RuntimeException;
 

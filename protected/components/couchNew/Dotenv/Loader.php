@@ -2,8 +2,8 @@
 
 
 
-use Dotenv\Exception\InvalidFileException;
-use Dotenv\Exception\InvalidPathException;
+use InvalidFileException;
+use InvalidPathException;
 
 /**
  * This is the loaded class.

@@ -13,10 +13,10 @@ function lookup(title, ctrl, type, scr_id, lo_id,auto_val)
 	{
 	values=$('#'+ctrl).val();
 	if(ctrl=='PARTN_NUMB1')
-        values=$('#PARTN_NUMB').val();
+		values=$('#PARTN_NUMB').val();
 	}else
 		values='';
-    
+	
     if(type == 'sales_person') {
         isSalesPerson = true;
         type = 'sold_to_customer';

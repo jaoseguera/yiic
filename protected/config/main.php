@@ -158,7 +158,7 @@ return array(
 		'accountgroup'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'ACCN.properties',
 		'update'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'CouchDBupdate.php',
 		'file'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'file.json',
-		'logoPath'=>dirname(dirname(dirname(__FILE__))).DIRECTORY_SEPARATOR.'upload'.DIRECTORY_SEPARATOR,
+		'logoPath'=>dirname(dirname(dirname(__FILE__))).DIRECTORY_SEPARATOR.'protected/upload'.DIRECTORY_SEPARATOR,
 		'salt'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'salt.properties'
     ),
 );

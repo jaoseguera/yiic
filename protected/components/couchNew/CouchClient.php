@@ -18,10 +18,10 @@
  */
 
 use Exception;
-use PHPOnCouch\Exceptions\CouchException;
+use CouchException;
 use InvalidArgumentException;
 use BadMethodCallException;
-use PHPOnCouch\Exceptions\CouchNotFoundException;
+use CouchNotFoundException;
 
 /**
  * CouchDB client class

@@ -15,9 +15,8 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-namespace PHPOnCouch;
 
-use PHPOnCouch\Exceptions\CouchException;
+use CouchException;
 
 /**
  * Special class to handle replication stuff, as the API is still evolving

@@ -3,7 +3,7 @@
 
 
 use Dotenv;
-use Dotenv\Exception\InvalidPathException;
+use InvalidPathException;
 
 class Config
 {
