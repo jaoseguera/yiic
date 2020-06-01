@@ -1,14 +1,13 @@
 <?php
-//GEZG 06/20/2018 - Alias for SAPRFC library
 use SAPNWRFC\Connection as SapConnection;
 use SAPNWRFC\Exception as SapException;
-global $rfc,$fce;
+global $rfc,  $fce;
 
 //error_reporting(0);
 $val = $_REQUEST['val'];
-$sh = $_REQUEST['sh'];
+//$sh = $_REQUEST['sh'];
 $type = $_REQUEST['type'];
-$_SESSION['look_type'] = $type;
+//$_SESSION['look_type'] = $type;
 $ids = $_REQUEST['ids'];
 $_SESSION['look_ids'] = $ids;
 $_SESSION['row_look'] = 30;
@@ -74,27 +73,24 @@ $rowsagt1 = 4;
 $em_ex = explode(",", $em);
 $val_ex = explode(",", $val);
 
-$p = $_REQUEST['sel'];
-$findme = '@';
-$pos = strpos($p, $findme);
-if ($pos !== false) {
-    $ss = explode('@', $p);
-    $field = $ss[0];
-    $p = $ss[0];
-}
+// $p = $_REQUEST['sel'];
+// $findme = '@';
+// $pos = strpos($p, $findme);
+// if ($pos !== false) {
+//     $ss = explode('@', $p);
+//     $field = $ss[0];
+//     $p = $ss[0];
+// }
 
 $importTable = array();
 foreach ($em_ex as $keys => $values) {
     $vals = strtoupper($val_ex[$keys]);
     if ($vals != "") {
-        // $SELECTION_FOR_HELPVALUES = array("SELECT_FLD" => $values, "SIGN" => "I", "OPTION" => "CP", "LOW" => "*" . $vals . "*", "HIGH" => "");
         $SELECTION_FOR_HELPVALUES = array("SELECT_FLD" => $values, "SIGN" => "I", "OPTION" => "CP", "LOW" => $vals , "HIGH" => "");
         array_push($importTable, $SELECTION_FOR_HELPVALUES);
     }
 }
 
-//GEZG 06/21/2018
-//Changing SAPRFC methods
 $options = ['rtrim'=>true];
 $res = $fce->invoke([
         "VKORG"=>$val_ex[0]
@@ -135,9 +131,9 @@ $_SESSION['look_p'] = $p;
     In the UOM the response is in the table VALUES.
 */
     $sap_table_result = "HELPVALUES";
-    if($_REQUEST['type'] == 'TARGET_QU') {
-        $sap_table_result = "VALUES";
-    }
+    // if($_REQUEST['type'] == 'TARGET_QU') {
+    //     $sap_table_result = "VALUES";
+    // }
     $rowsagt = count($res[$sap_table_result]);
 
 $rowsagt = count($res[$sap_table_result]);

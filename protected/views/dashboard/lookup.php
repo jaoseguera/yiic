@@ -1,4 +1,7 @@
 <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/datatable.js"></script><script>
+
+var isSalesPerson = false;
+
 function lookup(title, ctrl, type, scr_id, lo_id,auto_val)
 {    
     var values='';
@@ -10,10 +13,15 @@ function lookup(title, ctrl, type, scr_id, lo_id,auto_val)
 	{
 	values=$('#'+ctrl).val();
 	if(ctrl=='PARTN_NUMB1')
-		values=$('#PARTN_NUMB').val();
+        values=$('#PARTN_NUMB').val();
 	}else
 		values='';
-	
+    
+    if(type == 'sales_person') {
+        isSalesPerson = true;
+        type = 'sold_to_customer';
+    }
+    
 	if(typeof values == 'undefined')
 		values='';
 	$.ajax(
@@ -71,10 +79,12 @@ function tipup(obj,method,order,type,title,ids,sel,scr_id,lo_id,values)
         val = $('#'+scr_id).val()
     // $('#title').html(title+"<span class='swip'>Swipe to Scroll</span>"); 
     $('#dialog').html("<img src='<?php echo Yii::app()->request->baseUrl; ?>/images/loader.gif' style='margin-left:45%;margin-top:15%;'>");
-    if(type == 'sales_person'){
-        var datastr = 'url=lookup&key=lookup&type=PARTN_NUMB'+'&order='+order+'&ids='+ids+'&obj='+obj+'&method='+method+'&sel='+sel+'&lo_value='+val+'&lo_id='+lo_id;    
-    } else {
-        var datastr = 'url=lookup&key=lookup&type='+type+'&order='+order+'&ids='+ids+'&obj='+obj+'&method='+method+'&sel='+sel+'&lo_value='+val+'&lo_id='+lo_id;
+
+    var datastr = 'url=lookup&key=lookup&type='+type+'&order='+order+'&ids='+ids+'&obj='+obj+'&method='+method+'&sel='+sel+'&lo_value='+val+'&lo_id='+lo_id;
+
+    if(isSalesPerson) {
+        type = "sales_person";
+        isSalesPerson = false;
     }
 	
 	url='common/lookup';
