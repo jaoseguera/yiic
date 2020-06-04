@@ -5,9 +5,7 @@ global $rfc,  $fce;
 
 //error_reporting(0);
 $val = $_REQUEST['val'];
-//$sh = $_REQUEST['sh'];
 $type = $_REQUEST['type'];
-//$_SESSION['look_type'] = $type;
 $ids = $_REQUEST['ids'];
 $_SESSION['look_ids'] = $ids;
 $_SESSION['row_look'] = 30;
@@ -28,7 +26,6 @@ $rowsagt1 = 4;
                 "aiOrder": [ <?php echo $order; ?> ]
             }
         });
-        //alert($('#dialog').scrollTop()+','+$('.rot_t').height());
     });
 </script>
 <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/table.css" rel="stylesheet" type="text/css"/>
@@ -73,15 +70,6 @@ $rowsagt1 = 4;
 $em_ex = explode(",", $em);
 $val_ex = explode(",", $val);
 
-// $p = $_REQUEST['sel'];
-// $findme = '@';
-// $pos = strpos($p, $findme);
-// if ($pos !== false) {
-//     $ss = explode('@', $p);
-//     $field = $ss[0];
-//     $p = $ss[0];
-// }
-
 $importTable = array();
 foreach ($em_ex as $keys => $values) {
     $vals = strtoupper($val_ex[$keys]);
@@ -125,15 +113,7 @@ $_SESSION['look_text'] = $text;
 $_SESSION['look_p'] = $p;
 //var_dump($text);
 //............................................................................................................
-/*
-    TARGET_QU = OUM Response table
-    In the response table of UOM Values the name of the response table is different from the other responses.
-    In the UOM the response is in the table VALUES.
-*/
     $sap_table_result = "HELPVALUES";
-    // if($_REQUEST['type'] == 'TARGET_QU') {
-    //     $sap_table_result = "VALUES";
-    // }
     $rowsagt = count($res[$sap_table_result]);
 
 $rowsagt = count($res[$sap_table_result]);
