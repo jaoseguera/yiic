@@ -178,7 +178,7 @@ $(document).ready(function(e)
     })
 });
 
-function scrt()
+function scrt(type)
 {
     if ($('.rot_t').height() - $('#dialog').height()<$('#dialog').scrollTop())
     {    
@@ -195,7 +195,7 @@ function scrt()
         var irows=$('.ort').length;
         if($('#df'+irows+1).length==0)
         {
-            var datastr = 'irows='+irows+'&pre='+pre;
+            var datastr = 'irows='+irows+'&pre='+pre+'&type='+type;
             $.ajax({
                 type:'POST', 
                 url: 'common/helpload',

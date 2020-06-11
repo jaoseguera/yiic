@@ -557,6 +557,8 @@ class CommonController extends Controller {
 
             if($_REQUEST['type']=="Material Document"){
                 Yii::app()->controller->renderPartial('mat_doc_helpload', array('model' => $model, 'docs' => $docs));
+            }else if($_REQUEST['type']==_SALESPERSON) {
+                Yii::app()->controller->renderPartial('sales_person_helpload', array('model' => $model, 'docs' => $docs));
             }else{
                 Yii::app()->controller->renderPartial('helpload', array('model' => $model, 'docs' => $docs));
             }

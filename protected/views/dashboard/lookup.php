@@ -52,7 +52,7 @@ function tipup(obj,method,order,type,title,ids,sel,scr_id,lo_id,values)
     divs +='<input type="button" value="" class="c_bt tip_cls" id="clse"/>';
     var swipeScroll = '<?=Controller::customize_label(_SWIPESCROLL);?>';
     divs +='<div id="title">'+title+'<span class="swip">'+swipeScroll+'</span></div>';
-    divs +='<div id="dialog" onscroll="scrt()"></div>';
+    divs +='<div id="dialog" onscroll="scrt(\''+title+'\')"></div>';
     divs +='<input type="button" value="<?php echo _BACK ?>" class="c_bb" id="back_it" style="display:none;"/>';
     divs +='<input type="button" value="<?php echo _SELECTITEM?>" class="c_bt" id="ok_it" style="display:none;"/></div>';
 
