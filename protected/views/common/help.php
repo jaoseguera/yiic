@@ -141,12 +141,18 @@ $res = $fce->invoke([
             "EXPLICIT_SHLP"=>$EXPLICIT_SHLP,
             "SELECTION_FOR_HELPVALUES"=>$importTable
         ],$options);
-$rowsagt1 = count($res["DESCRIPTION_FOR_HELPVALUES"]);
+
+$table_descriptions = "DESCRIPTION_FOR_HELPVALUES";
+
+if($type == 'MATERIAL')
+        $table_descriptions = "DESC_VALUES";
+
+$rowsagt1 = count($res[$table_descriptions]);
 
 $mtrl_lookup = false;
 $create_sales_order_lookup = false;
 for ($j = 0; $j < $rowsagt1; $j++) {
-    $SalesOrdert1 = $res["DESCRIPTION_FOR_HELPVALUES"][$j];
+    $SalesOrdert1 = $res[$table_descriptions][$j];
 	if($field == trim($SalesOrdert1['FIELDNAME']))
 		$p = ($j);
 	
@@ -178,7 +184,9 @@ $_SESSION['look_p'] = $p;
     In the UOM the response is in the table VALUES.
 */
     $sap_table_result = "HELPVALUES";
-    if($_REQUEST['type'] == 'TARGET_QU') {
+    if($_REQUEST['type'] == 'TARGET_QU' 
+     || $_REQUEST['key'] == 'search_material'
+    ) {
         $sap_table_result = "VALUES";
     }
 
@@ -257,8 +265,9 @@ $_SESSION['look_row1'] = $rowsagt1;
                             for ($i = 0; $i < $rowsagt1; $i++) {
 								if($mtrl_lookup)
 								{
-									$form1[$i] = ltrim(substr($form, $offset[$i], $leng[$i]));
-									if(is_numeric($form1[$i]))
+                                    $form1[$i] = ltrim(substr($form, $offset[$i], $leng[$i]));
+                                    $up = ltrim(substr($form, $offset[1], $leng[1]));
+									if(is_numeric($form1[$i]) && type != 'MATERIAL')
 									{
 										$form1[$i] = ltrim($form1[$i], "0");
 									}

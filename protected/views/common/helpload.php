@@ -38,6 +38,10 @@ if(isset($doc->$type->display))
     $disp=$doc->$type->display;
     $gs=explode(',',$disp);
 }
+
+$columns = count($gs);
+if($type == 'MATERIAL') { $columns = 2; }
+
 $order = "0,1,2";
 if(isset($doc->$type->order)) { $order=$doc->$type->order; }
 
@@ -61,7 +65,8 @@ for ($j=$irows+1;$j<=$iend;$j++)
         $as=1;
         for($i=0;$i<$rowsagt1;$i++)
         {
-            $form1[$i]= ltrim(substr($form,$offset[$i],$leng[$i]), "0");
+            $form1[$i]= substr($form,$offset[$i],$leng[$i]);
+            if($type != "MATERIAL") { $form1[$i]= ltrim($form1[$i], "0"); }
             if($i==$p) { $sd[0]=$form1[$i]; }
             else {
                 $sd[$as]=$form1[$i];
@@ -74,7 +79,7 @@ for ($j=$irows+1;$j<=$iend;$j++)
         for($i=0;$i<$rowsagt1;$i++)
         {
             $calsses="show_header";
-            if($i<4)
+            if($i<$columns)
             {
                 ?><td onclick="getval('<?php echo $form1[$p]; ?>','<?php echo $type; ?>','<?php echo $j; ?>','<?php echo $ids; ?>','<?php echo $form1[1]; ?>', 'single')" ondblclick="getval('<?php echo $form1[$p]; ?>','<?php echo $type; ?>','<?php echo $j; ?>','<?php echo $ids; ?>','<?php echo $form1[1]; ?>', 'double')" style="cursor:pointer;white-space:nowrap;"class="<?php echo $calsses;?> display_<?php echo $sq[$i];?> " alt="display_<?php echo $sq[$i];?>"><?php echo $sd[$sq[$i]];?></td><?php 
                 $ij++;
