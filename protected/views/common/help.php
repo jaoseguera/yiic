@@ -292,7 +292,7 @@ $_SESSION['look_row1'] = $rowsagt1;
                                         $calsses = "hide_header";
                                     }
                                     ?>
-                                    <td onclick="getval('<?php echo ltrim($form1[$p]); ?>','<?php echo $type; ?>','<?php echo $j; ?>','<?php echo $ids; ?>','<?php echo $form1[1]; ?>', 'single')" ondblclick="getval('<?php echo ltrim($form1[$p]); ?>','<?php echo $type; ?>','<?php echo $j; ?>','<?php echo $ids; ?>','<?php echo $form1[1]; ?>', 'double')" style="cursor:pointer;white-space:nowrap;"class="<?php echo $calsses; ?> display_<?php echo $ij + 1; ?> " alt="display_<?php echo $ij + 1; ?>"><?php echo ltrim($form1[$i]); ?></td>
+                                    <td onclick="getval('<?php echo ltrim($form1[$p]); ?>','<?php echo $type; ?>','<?php echo $j; ?>','<?php echo $ids; ?>','<?php echo $form1[1]; ?>', 'single')" ondblclick="getval('<?php echo ltrim($form1[$p]); ?>','<?php echo $type; ?>','<?php echo $j; ?>','<?php echo $ids; ?>','<?php echo $form1[1]; ?>', 'double')" style="cursor:pointer;white-space:nowrap; <?php if($type == 'MATERIAL' && $i == 0) echo 'text-align: left;'; ?>"class="<?php echo $calsses; ?> display_<?php echo $ij + 1; ?> " alt="display_<?php echo $ij + 1; ?>"><?php echo ltrim($form1[$i]); ?></td>
                                     <?php
                                     $ij++;
                                 }

@@ -81,7 +81,7 @@ for ($j=$irows+1;$j<=$iend;$j++)
             $calsses="show_header";
             if($i<$columns)
             {
-                ?><td onclick="getval('<?php echo $form1[$p]; ?>','<?php echo $type; ?>','<?php echo $j; ?>','<?php echo $ids; ?>','<?php echo $form1[1]; ?>', 'single')" ondblclick="getval('<?php echo $form1[$p]; ?>','<?php echo $type; ?>','<?php echo $j; ?>','<?php echo $ids; ?>','<?php echo $form1[1]; ?>', 'double')" style="cursor:pointer;white-space:nowrap;"class="<?php echo $calsses;?> display_<?php echo $sq[$i];?> " alt="display_<?php echo $sq[$i];?>"><?php echo $sd[$sq[$i]];?></td><?php 
+                ?><td onclick="getval('<?php echo $form1[$p]; ?>','<?php echo $type; ?>','<?php echo $j; ?>','<?php echo $ids; ?>','<?php echo $form1[1]; ?>', 'single')" ondblclick="getval('<?php echo $form1[$p]; ?>','<?php echo $type; ?>','<?php echo $j; ?>','<?php echo $ids; ?>','<?php echo $form1[1]; ?>', 'double')" style="cursor:pointer;white-space:nowrap;<?php if($type == 'MATERIAL' && $i == 1) echo 'text-align: left;'; ?>"class="<?php echo $calsses;?> display_<?php echo $sq[$i];?> " alt="display_<?php echo $sq[$i];?>"><?php echo $sd[$sq[$i]];?></td><?php 
                 $ij++;
             }
             else
