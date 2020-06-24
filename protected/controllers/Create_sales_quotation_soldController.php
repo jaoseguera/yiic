@@ -49,6 +49,27 @@ class Create_sales_quotation_soldController extends Controller
             global $rfc, $fce;
             $model = new Create_sales_quotation_soldForm;
             if(isset($_REQUEST['scr'])) { $s_wid=$_REQUEST['scr']; }
+
+            if($_SESSION['USER_LANG'] == "ES") {
+                $b = new Bapi();       
+                $b->bapiCall('ZCONVERSION_EXIT_CUNIT_INPUT');
+                $options = ['rtrim'=>true];
+
+                for($i = 0; $i<count($_REQUEST['su']); $i++){
+                    $res = $fce->invoke([
+                    'INPUT'=>$_REQUEST['su'][$i]
+                    ],$options);
+                    $_REQUEST['su'][$i] = $res['OUTPUT'];
+                }
+                
+                for($i = 0; $i<count($_REQUEST['COND_UNIT']); $i++){
+                    $res = $fce->invoke([
+                    'INPUT'=>$_REQUEST['COND_UNIT'][$i]
+                    ],$options);
+                    $_REQUEST['COND_UNIT'][$i] = $res['OUTPUT'];
+                }
+            }
+
             $bapiName = Controller::Bapiname($_REQUEST['url']);
             $b = new Bapi();
             $b->bapiCall($bapiName);
