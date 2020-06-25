@@ -51,22 +51,12 @@ class Create_sales_quotation_soldController extends Controller
             if(isset($_REQUEST['scr'])) { $s_wid=$_REQUEST['scr']; }
 
             if($_SESSION['USER_LANG'] == "ES") {
-                $b = new Bapi();       
-                $b->bapiCall('ZCONVERSION_EXIT_CUNIT_INPUT');
-                $options = ['rtrim'=>true];
-
                 for($i = 0; $i<count($_REQUEST['su']); $i++){
-                    $res = $fce->invoke([
-                    'INPUT'=>$_REQUEST['su'][$i]
-                    ],$options);
-                    $_REQUEST['su'][$i] = $res['OUTPUT'];
+                    $_REQUEST['su'][$i] = $this->translateUOM_toEnglish($_REQUEST['su'][$i]);
                 }
-                
+
                 for($i = 0; $i<count($_REQUEST['COND_UNIT']); $i++){
-                    $res = $fce->invoke([
-                    'INPUT'=>$_REQUEST['COND_UNIT'][$i]
-                    ],$options);
-                    $_REQUEST['COND_UNIT'][$i] = $res['OUTPUT'];
+                    $_REQUEST['COND_UNIT'][$i] = $this->translateUOM_toEnglish($_REQUEST['COND_UNIT'][$i]);
                 }
             }
 
@@ -78,6 +68,42 @@ class Create_sales_quotation_soldController extends Controller
         else{
             $this->redirect(array('login/'));
         }
+    }
+
+    public function translateUOM_toEnglish($uom) {
+        global $rfc, $fce;
+        $bapiName = Controller::Bapiname('search_customers');
+        $b = new Bapi();       
+        $b->bapiCall($bapiName);
+        $options = ['rtrim'=>true];
+        $importTable = array();
+        $SELECTION_FOR_HELPVALUES = array("SELECT_FLD" => "MSEH3", "SIGN" => "I", "OPTION" => "EQ", "LOW" => $uom , "HIGH" => "");
+        array_push($importTable, $SELECTION_FOR_HELPVALUES);
+        $EXPLICIT_SHLP = array("SHLPNAME" => "", "SHLPTYPE" => "", "TITLE" => "", "REPTEXT" => "");
+                    
+        $res = $fce->invoke([
+                    "OBJTYPE"=>"BUS2032",
+                    "OBJNAME"=>"",
+                    "METHOD"=>"CREATEFROMDAT2",
+                    "PARAMETER"=>"ORDERITEMSIN",
+                    "FIELD"=>"TARGET_QU",
+                    "EXPLICIT_SHLP"=>$EXPLICIT_SHLP,
+                    "SELECTION_FOR_HELPVALUES"=>$importTable
+                ],$options);
+
+        $row = $res["VALUES"]["0"]["HELPVALUES"];
+        do{
+            foreach($res["DESCRIPTION_FOR_HELPVALUES"] as $description) {
+                if($description["FIELDNAME"] == "MSEH3") {
+                    $offset = $description["OFFSET"];
+                    $leng = $description["LENG"];
+                }
+            }
+        }while($offset == null && leng == null);
+
+        $converted_uom = trim(substr($row, $offset, $leng));
+            
+        return $converted_uom;
     }
 	
 	 public function actionQuotaitonemail()
