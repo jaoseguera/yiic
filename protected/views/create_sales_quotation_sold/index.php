@@ -188,7 +188,7 @@ if(is_array($ctrl_arr)){
                         <div class="controls">
                             <input alt="Payment Terms" type="text" name="PMNTTERMS" id='PMNTTERMS' class="input-fluid validate[required] getval radius" autocomplete="off" onchange="getPaymentTermDesc(this.value);"  value='<?php echo $pmntterms;?>'/>
 
-                            <span class='minw' onclick="lookup('<?=Controller::customize_label(_PAYMENTTERMS);?>', 'PMNTTERMS', 'payment_terms')" >&nbsp;</span>
+                            <span id='paymentTerms_lookup' class='minw' onclick="lookup('<?=Controller::customize_label(_PAYMENTTERMS);?>', 'PMNTTERMS', 'payment_terms')" >&nbsp;</span>
                         </div>
                     </div>
                     <div class="control-group">

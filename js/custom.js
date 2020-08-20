@@ -474,8 +474,10 @@ function jspt_new(ids,myKey,e)
 					$('#SOLD_NAME').html(str[3]);
 					$('#LANGUAGE').val(str[4]);
                     $('#PMNTTERMS').val(str[5]);
-                    $('#ZTERM_DESC').val(str[6]);                    
-				
+                    $('#ZTERM_DESC').val(str[6]);
+
+		            $('#paymentTerms_lookup').hide();                
+                    $('#PMNTTERMS').attr('readonly', true);	
                 }
 				else
 				{
