@@ -48,7 +48,7 @@ class Product_availability_quotationForm extends CFormModel
         $SalesOrder['Q_QUANTITY']  = round($res['Q_QUANTITY'],0);
         $SalesOrder['D_QUANTITY'] = round($res['D_QUANTITY'],1);
         $SalesOrder['PUR_ORDERS'] = round($res['PUR_ORDERS'],0);
-        $SalesOrder['T_QUANTITY'] = $res['U_QUANTITY']-$res['O_QUANTITY']+$res['D_QUANTITY'];
+        $SalesOrder['T_QUANTITY'] = $res['U_QUANTITY']-($res['O_QUANTITY']+$res['D_QUANTITY']);
         $_SESSION['product_aval_err']=$res['E_MESSAGE'];
         /*
         $s_msg = "";

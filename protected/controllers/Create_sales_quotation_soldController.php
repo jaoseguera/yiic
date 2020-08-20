@@ -50,7 +50,7 @@ class Create_sales_quotation_soldController extends Controller
             $model = new Create_sales_quotation_soldForm;
             if(isset($_REQUEST['scr'])) { $s_wid=$_REQUEST['scr']; }
 
-            if($_SESSION['USER_LANG'] == "ES") {
+            if($_SESSION['USER_LANG'] != "EN") {
                 for($i = 0; $i<count($_REQUEST['su']); $i++){
                     $_REQUEST['su'][$i] = $this->translateUOM_toEnglish($_REQUEST['su'][$i]);
                 }
