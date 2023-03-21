@@ -291,7 +291,7 @@ define("_QUOTATIONMAILSUBJECT", "Documento de Cotización de ThinUI");
 define("_QUOTATIONPDFMAIL", "Confirmacion_Cotizacion_");
 define("_SELECTAMATERIAL", "Debe de seleccionar un producto");
 define("_SELECTCUSTOMER", "Debe seleccionar un cliente");
-define("_PERCENTAGEDISCOUNT", "Porcentaje de descuento");
+define("_DISCOUNT", "Descuento");
 define("_SELECTPLANT", "Debe seleccionar una planta");
 define("_ERROR_MANY_COLUMNS", "<script type='text/javascript'>alert('Hay demasiadas columnas para construir un PDF legible. Por favor use la descarga en Excel/CSV.');</script>");
 ?>

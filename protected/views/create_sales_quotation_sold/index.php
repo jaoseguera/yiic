@@ -80,6 +80,7 @@ elseif(isset($customerNo) && $customerNo!='')
 	$item_categ="";
 	$header_text="";
     $percentage_discount="";
+    $amount_discount="";
 	$lang="";
 	$high_level_item = "";
 }
@@ -144,6 +145,7 @@ if(is_array($ctrl_arr)){
     $PURCH_NO_C = $ctrl_arr["PURCH_NO_C"];
     $headCurrency = $ctrl_arr["HEAD_CURRENCY"];
     $percentage_discount = $ctrl_arr['PERCENTAGE_DISCOUNT'];
+    $amount_discount = $ctrl_arr['AMOUNT_DISCOUNT'];
 }
 ?>
 <div id="tarea" style="display:none;"></div>
@@ -257,8 +259,9 @@ if(is_array($ctrl_arr)){
                             Adding percentage discount button
                     -->
                     <input type="hidden"  name="PERCENTAGE_DISCOUNT" class="getval" value="<?php echo $percentage_discount; ?>" id="PERCENTAGE_DISCOUNT" />
-                     <input type="button" onClick="enterValue('PERCENTAGE_DISCOUNT','')" value="<?=Controller::customize_label(_PERCENTAGEDISCOUNT);?>" class="btn" />
-
+                    <input type="hidden"  name="AMOUNT_DISCOUNT" class="getval" value="<?php echo $amount_discount; ?>" id="AMOUNT_DISCOUNT" />
+                     <input type="button" 
+                     onClick="enterValue('PERCENTAGE_DISCOUNT','','AMOUNT_DISCOUNT','','<?=Controller::customize_label(_DISCOUNT);?>')" value="<?=Controller::customize_label(_DISCOUNT);?>" class="btn" />
                      
                   <input type="hidden"  name="LANGUAGE" value="<?php echo $lang; ?>" id="LANGUAGE" />
 				  </div></div>

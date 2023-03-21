@@ -15,7 +15,8 @@ if(strtoupper($_REQUEST["DOC_TYPE"])=='OR')
 	$cusLenth2       = count($partn2);
 	$DISTR_CHAN     = strtoupper($_REQUEST['DISTR_CHAN']);
     $DOC_TYPE       = $doc_r;
-    $percentageDiscount = trim($_REQUEST['PERCENTAGE_DISCOUNT']);
+	$percentageDiscount = trim($_REQUEST['PERCENTAGE_DISCOUNT']);
+	$amountDiscount = trim($_REQUEST['AMOUNT_DISCOUNT']);
 	//$DIVISION       = strtoupper($_REQUEST['DIVISION']);
 	$QTDate       = explode('/',$_REQUEST['ValidtoDate']);
 	$QFDate	= explode('/',$_REQUEST['ValidfromDate']);
@@ -179,6 +180,15 @@ if(strtoupper($_REQUEST["DOC_TYPE"])=='OR')
             );	
             array_push($importTableCONDITIONSIN,$QUOTATION_CONDITIONS_IN);			
 		}
+
+		if($amountDiscount != ""){
+			$QUOTATION_CONDITIONS_IN = array(
+				"ITM_NUMBER"=>"000000",
+				"COND_TYPE"=>"ZHB2",
+				"COND_VALUE"=>floatval($amountDiscount)			
+            );	
+            array_push($importTableCONDITIONSIN,$QUOTATION_CONDITIONS_IN);			
+		}
 		
         //.................................................................................
 		
@@ -226,6 +236,14 @@ if(strtoupper($_REQUEST["DOC_TYPE"])=='OR')
 			array_push($importTableCONDITIONSINX,$CONDITIONS_INX);		
 		}
 		
+		if($amountDiscount != ""){
+			$CONDITIONS_INX = array(
+				"ITM_NUMBER"=>"000000",
+				"COND_TYPE"=>"ZHB2",
+				"COND_VALUE"=>"X"		
+			);
+			array_push($importTableCONDITIONSINX,$CONDITIONS_INX);		
+		}
 		
 	$i_text_split=str_split($i_text[$keys],132);
 	foreach($i_text_split as $ik=>$iv)

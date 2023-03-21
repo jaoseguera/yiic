@@ -291,7 +291,7 @@ define("_QUOTATIONMAILSUBJECT", "Sales Quotation Document from ThinUI");
 define("_QUOTATIONPDFMAIL", "Sales_Quotation_Confirmation_");
 define("_SELECTAMATERIAL", "Please select a material first");
 define("_SELECTCUSTOMER", "Please select a customer first");
-define("_PERCENTAGEDISCOUNT", "Percentage Discount");
+define("_DISCOUNT", "Discount");
 define("_SELECTPLANT", "Please select a plant");
 define("_ERROR_MANY_COLUMNS", "<script type='text/javascript'>alert('There are too many columns to produce a readable PDF. Please use Excel/CSV download.');</script>");
 ?>

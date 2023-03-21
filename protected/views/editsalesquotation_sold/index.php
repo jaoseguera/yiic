@@ -23,7 +23,8 @@ $division = "";
 $headCurrency = "";
 $btn = "";
 $h_text="";
-$p_discount="";
+$percentage_discount="";
+$amount_discount="";
 $i_txt="";
 $s_txt="";
 $item_categ="";
@@ -99,17 +100,30 @@ if (isset($_REQUEST['I_VBELN'])) {
       }  
       if($am['COND_TYPE']=='ZRA0')
       {
-         $p_discount    = $am['COND_VALUE'];       
+         $percentage_discount    = $am['COND_VALUE'];       
          $disc          = false;
-         if(strpos($p_discount, "-") >= 0 ){
-            str_replace("-", "", $p_discount);
+         if(strpos($percentage_discount, "-") >= 0 ){
+            str_replace("-", "", $percentage_discount);
             $disc = true;
           }  
-          $p_discount = number_format((float)$p_discount,2,'.','');
+          $percentage_discount = number_format((float)$percentage_discount,2,'.','');
           if($disc){
-            $p_discount = $p_discount."-";
+            $percentage_discount = $percentage_discount."-";
           }
-      }  
+      }
+      if($am['COND_TYPE']=='ZHB2')
+      {
+         $amount_discount    = $am['COND_VALUE'];       
+         $disc          = false;
+         if(strpos($amount_discount, "-") >= 0 ){
+            str_replace("-", "", $amount_discount);
+            $disc = true;
+          }  
+          $amount_discount = number_format((float)$amount_discount,2,'.','');
+          if($disc){
+            $amount_discount = $amount_discount."-";
+          }
+      }    
       $i++;
    }   
 
@@ -449,8 +463,9 @@ margin-left:-30px !important;
                            GEZG 02/06/19 
                            Adding percentage discount button
                     -->
-                    <input type="hidden"  name="PERCENTAGE_DISCOUNT" class="getval" value="<?php echo $p_discount; ?>" id="PERCENTAGE_DISCOUNT" />
-                     <input type="button" onClick="enterValue('PERCENTAGE_DISCOUNT','')" value="<?=Controller::customize_label(_PERCENTAGEDISCOUNT);?>" class="btn" />
+                    <input type="hidden"  name="PERCENTAGE_DISCOUNT" class="getval" value="<?php echo $percentage_discount; ?>" id="PERCENTAGE_DISCOUNT" />
+                    <input type="hidden"  name="AMOUNT_DISCOUNT" class="getval" value="<?php echo $amount_discount; ?>" id="AMOUNT_DISCOUNT" />
+                     <input type="button" onClick="enterValue('PERCENTAGE_DISCOUNT','','AMOUNT_DISCOUNT','','<?=Controller::customize_label(_DISCOUNT);?>')" value="<?=Controller::customize_label(_DISCOUNT);?>" class="btn" />
 
 
 

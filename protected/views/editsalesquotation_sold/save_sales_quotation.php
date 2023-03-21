@@ -14,6 +14,7 @@
 	$DISTR_CHAN     = strtoupper($_REQUEST['DISTR_CHAN']);
 	$DOC_TYPE       = strtoupper($_REQUEST["DOC_TYPE"]);
 	$percentageDiscount = trim($_REQUEST['PERCENTAGE_DISCOUNT']);
+	$amountDiscount = trim($_REQUEST['AMOUNT_DISCOUNT']);
 
 	$DIVISION       = strtoupper($_REQUEST['DIVISION']);
 	//$Delivery       = strtoupper($_REQUEST['Delivery']);
@@ -243,6 +244,14 @@
 			);	
 			array_push($importTableCONDTITIONIN,$CONDITIONS_IN);	
 		}
+		if($amountDiscount != ""){
+			$CONDITIONS_IN = array(
+				"ITM_NUMBER"=>"000000",
+				"COND_TYPE"=>"ZHB2",
+				"COND_VALUE"=>doubleval($amountDiscount)		
+			);	
+			array_push($importTableCONDTITIONIN,$CONDITIONS_IN);	
+		}
 
 		//.................................................................................
 		if($is_component[$keys] != "1"){
@@ -254,6 +263,15 @@
 			$CONDITIONS_INX = array(
 				"ITM_NUMBER"=>"000000",
 				"COND_TYPE"=>"ZRA0",
+				"COND_VALUE"=>"X"		
+			);
+			array_push($importTableCONDTITIONINX,$CONDITIONS_INX);		
+		}
+
+		if($amountDiscount != ""){
+			$CONDITIONS_INX = array(
+				"ITM_NUMBER"=>"000000",
+				"COND_TYPE"=>"ZHB2",
 				"COND_VALUE"=>"X"		
 			);
 			array_push($importTableCONDTITIONINX,$CONDITIONS_INX);		
