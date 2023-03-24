@@ -185,7 +185,8 @@ if(strtoupper($_REQUEST["DOC_TYPE"])=='OR')
 			$QUOTATION_CONDITIONS_IN = array(
 				"ITM_NUMBER"=>"000000",
 				"COND_TYPE"=>"ZHB2",
-				"COND_VALUE"=>floatval($amountDiscount)			
+				"COND_VALUE"=>floatval($amountDiscount),
+				"CURRENCY"=>$headCurrency
             );	
             array_push($importTableCONDITIONSIN,$QUOTATION_CONDITIONS_IN);			
 		}
@@ -240,7 +241,8 @@ if(strtoupper($_REQUEST["DOC_TYPE"])=='OR')
 			$CONDITIONS_INX = array(
 				"ITM_NUMBER"=>"000000",
 				"COND_TYPE"=>"ZHB2",
-				"COND_VALUE"=>"X"		
+				"COND_VALUE"=>"X",
+				"CURRENCY"=>"X"
 			);
 			array_push($importTableCONDITIONSINX,$CONDITIONS_INX);		
 		}

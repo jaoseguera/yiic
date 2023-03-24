@@ -27,6 +27,7 @@
 	$Order_quantity = $_REQUEST['Order_quantity'];
 	$Price 			= $_REQUEST['Price'];
 	$Currency		= $_REQUEST['currency'];
+	$headCurrency	= $_REQUEST['HEAD_CURRENCY'];
 	$Plant			= $_REQUEST['Plant'];
 	$su          	= $_REQUEST['su'];
 	$per_unit		= $_REQUEST['per_unit'];	
@@ -248,7 +249,8 @@
 			$CONDITIONS_IN = array(
 				"ITM_NUMBER"=>"000000",
 				"COND_TYPE"=>"ZHB2",
-				"COND_VALUE"=>doubleval($amountDiscount)		
+				"COND_VALUE"=>doubleval($amountDiscount),
+				"CURRENCY"=>$headCurrency
 			);	
 			array_push($importTableCONDTITIONIN,$CONDITIONS_IN);	
 		}
@@ -272,7 +274,8 @@
 			$CONDITIONS_INX = array(
 				"ITM_NUMBER"=>"000000",
 				"COND_TYPE"=>"ZHB2",
-				"COND_VALUE"=>"X"		
+				"COND_VALUE"=>"X",
+				"CURRENCY"=>"X"
 			);
 			array_push($importTableCONDTITIONINX,$CONDITIONS_INX);		
 		}
