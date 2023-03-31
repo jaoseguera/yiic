@@ -261,7 +261,7 @@ if(is_array($ctrl_arr)){
                     <input type="hidden"  name="PERCENTAGE_DISCOUNT" class="getval" value="<?php echo $percentage_discount; ?>" id="PERCENTAGE_DISCOUNT" />
                     <input type="hidden"  name="AMOUNT_DISCOUNT" class="getval" value="<?php echo $amount_discount; ?>" id="AMOUNT_DISCOUNT" />
                      <input type="button" 
-                     onClick="enterValue('PERCENTAGE_DISCOUNT','','AMOUNT_DISCOUNT','','<?=Controller::customize_label(_DISCOUNT);?>')" value="<?=Controller::customize_label(_DISCOUNT);?>" class="btn" />
+                     onClick="enterValue('PERCENTAGE_DISCOUNT','','AMOUNT_DISCOUNT','','<?=Controller::customize_label(_DISCOUNT);?>','<?=Controller::customize_label(_PERCENTAGE);?>','<?=Controller::customize_label(_OR);?>','<?=Controller::customize_label(_FIXEDAMOUNT);?>')" value="<?=Controller::customize_label(_DISCOUNT);?>" class="btn" />
                      
                   <input type="hidden"  name="LANGUAGE" value="<?php echo $lang; ?>" id="LANGUAGE" />
 				  </div></div>

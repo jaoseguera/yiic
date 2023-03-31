@@ -532,7 +532,7 @@ function enterText(type,ids){
     });		
 }
 
-function enterValue(type,ids,type2,ids2,title){
+function enterValue(type,ids,type2,ids2,title,percentage,or,amount){
     var name=type+ids;
     var name2=type2+ids2;
     $('#loading').show();
@@ -543,20 +543,20 @@ function enterValue(type,ids,type2,ids2,title){
     $("body").css("opacity","1");
     var tarea_val=$("#"+name).val();
     var tarea_val2=$("#"+name2).val();
-    var divs ='<div id="vlsl" style="height:180px">';
+    var divs ='<div id="vlsl" style="height:220px">';
     divs +='<input type="button" value="" class="c_bt tip_cls" onClick="clse()" id="clse" style="position:relative;center:20px" />';
     divs +='<div id="title">'+title+'<span class="swip">Swipe to Scroll</span></div>';
     if ( $('#edit_salesorder').css('display') == 'inline-block' )
     {
-    divs +='<div id="dialog" style="height:75px !important; width:90% !important; position:relative; top:5px" onscroll="scrt()">'+
-            '<input readonly type="text" style="width:40%;" id="T_AREA"  name="'+name+'" value="'+tarea_val+'" /> <b>%</b><br>'+
-            '<input readonly type="text" style="width:40%;" id="T_AREA2"  name="'+name2+'" value="'+tarea_val2+'" /> <b>$</b> </div>';
+    divs +='<div id="dialog" style="height:50% !important; width:90% !important; position:relative; top:5px" onscroll="scrt()">'+
+        '<input readonly type="text" style="width:40%;" id="T_AREA"  name="'+name+'" value="'+tarea_val+'" /> <b>% '+percentage+'</b><br> <div style="text-align: center;width: 50%;"><b'+or+'</b></div>'+
+            '<input readonly type="text" style="width:40%;" id="T_AREA2"  name="'+name2+'" value="'+tarea_val2+'" /> <b>$ '+amount+'</b> </div>';
     divs +='<input type="button" value="<?php echo _BACK ?>" class="c_bb" id="back_its" style="display:none;"/>';
     }else
     {
-    divs +='<div id="dialog" style="height:75px !important; width:70% !important; position:relative; top:5px" onscroll="scrt()">'+
-        '<input type="text" style="width:40%;" id="T_AREA"  name="' + name + '" value="' + tarea_val + '" /> <b>%</b><br>' +
-        '<input type="text" style="width:40%;" id="T_AREA2"  name="' + name2 + '" value="' + tarea_val2 + '" /> <b>$</b></div>'
+    divs +='<div id="dialog" style="height:50% !important; width:70% !important; position:relative; top:5px" onscroll="scrt()">'+
+        '<input type="text" style="width:40%;" id="T_AREA"  name="'+name+'" value="'+tarea_val+'" /> <b>% ' + percentage+'</b><br> <div style="text-align: center;width: 50%;"><b>'+or+'</b></div>' +
+        '<input type="text" style="width:40%;" id="T_AREA2"  name="'+name2+'" value="'+tarea_val2+'" /> <b>$ '+amount+'</b></div>'
     divs +='<input type="button" value="<?php echo _BACK ?>" class="c_bb" id="back_its" style="display:none;"/>';
     divs +='<input type="button" value="Save" class="c_bt" onClick="saveData(\'T_AREA\',\''+name+'\',\'T_AREA2\',\''+name2+'\');"  id="sub_ok" style="display:none;"/></div>';    
     }

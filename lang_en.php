@@ -292,6 +292,9 @@ define("_QUOTATIONPDFMAIL", "Sales_Quotation_Confirmation_");
 define("_SELECTAMATERIAL", "Please select a material first");
 define("_SELECTCUSTOMER", "Please select a customer first");
 define("_DISCOUNT", "Discount");
+define("_PERCENTAGE", "Percentage");
+define("_OR", "or");
+define("_FIXEDAMOUNT", "Fixed amount");
 define("_SELECTPLANT", "Please select a plant");
 define("_ERROR_MANY_COLUMNS", "<script type='text/javascript'>alert('There are too many columns to produce a readable PDF. Please use Excel/CSV download.');</script>");
 ?>
