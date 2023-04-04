@@ -549,7 +549,7 @@ function enterValue(type,ids,type2,ids2,title,percentage,or,amount){
     if ( $('#edit_salesorder').css('display') == 'inline-block' )
     {
     divs +='<div id="dialog" style="height:50% !important; width:90% !important; position:relative; top:5px" onscroll="scrt()">'+
-        '<input readonly type="text" style="width:40%;" id="T_AREA"  name="'+name+'" value="'+tarea_val+'" /> <b>% '+percentage+'</b><br> <div style="text-align: center;width: 50%;"><b'+or+'</b></div>'+
+        '<input readonly type="text" style="width:40%;" id="T_AREA"  name="'+name+'" value="'+tarea_val+'" /> <b>% '+percentage+'</b><br> <div style="text-align: center;width: 50%;"><b>'+or+'</b></div>'+
             '<input readonly type="text" style="width:40%;" id="T_AREA2"  name="'+name2+'" value="'+tarea_val2+'" /> <b>$ '+amount+'</b> </div>';
     divs +='<input type="button" value="<?php echo _BACK ?>" class="c_bb" id="back_its" style="display:none;"/>';
     }else
